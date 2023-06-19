@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body { 
+    background: #D0E9FE;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background: linear-gradient(90deg, #146C94 0%, #23286B 99.17%);
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    width: 200px;
+    user-select: none;
+    color: white;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.meetTeam {
+    margin-top: 12vh;
+    font-size: 45px;
+}
+
+h1 {
+    padding: 20px 100px;
+    text-align: center;
+}
+
+hr {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+h3 {
+    color: floralwhite;
+}
+
+.wrapper{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper h1{
+    font-family: 'Allura', cursive;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.Team_member{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* margin: 5px; */
+    /* margin-bottom: 50px; */
+    /* width: 300px; */
+    padding:20px;
+    line-height: 20px;
+    color: #fcfcfc;
+    position:relative;
+    border-radius: 20px;
+}
+
+.Team_member h2{
+    color: black;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.Team_member h3.role{
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 12px 0;
+    font-weight: 400;
+}
+
+.Team_img{
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 150px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.linkedin_img {
+    margin-top: 10px;
+    height: 75px;
+}
