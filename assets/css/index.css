@@ -61,7 +61,7 @@ body {
     align-items: center;
     min-height: 100vh;
     /* background: url("Desktop.png") no-repeat; */
-    background: #D0E9FE;
+    background: rgb(224, 237, 247);
     background-size: cover;
     background-position: center;
 }
